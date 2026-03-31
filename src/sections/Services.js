@@ -29,19 +29,19 @@ export function ServicesSection() {
   const services = [
     {
       title: "Sites Institucionais",
-      text: "Presença digital sólida, elegante e com arquitetura que transmite autoridade em segundos.",
-      meta: "Identidade + confiança",
+      text: "A vitrine definitiva para sua empresa, com design sob medida, leitura fluida e autoridade desde o primeiro segundo.",
+      meta: "Identidade + confianca",
       icon: icons.institucional
     },
     {
       title: "Landing Pages",
-      text: "Páginas focadas em conversão, com narrativa visual e técnica alinhadas para vender mais.",
-      meta: "Conversão + clareza",
+      text: "Paginas com um unico objetivo: transformar visita em lead, conversa ou venda com narrativa visual afiada.",
+      meta: "Conversao + clareza",
       icon: icons.landing
     },
     {
       title: "Sites para Comunidades",
-      text: "Ambientes digitais para projetos, grupos e comunidades com ritmo, valor e senso de pertencimento.",
+      text: "Plataformas organizadas, acolhedoras e informativas para movimentos, paroquias e grupos que precisam centralizar comunicacao.",
       meta: "Engajamento + comunidade",
       icon: icons.comunidade
     }
@@ -50,10 +50,10 @@ export function ServicesSection() {
   return `
     <section class="section services" id="services">
       <div class="container">
-        <div class="section__eyebrow">Serviços</div>
-        <h2 class="section__title reveal">Uma estrutura leve, afiada e feita sob medida.</h2>
+        <div class="section__eyebrow">Servicos</div>
+        <h2 class="section__title reveal">O que eu entrego para transformar presenca digital em ativo de marca.</h2>
         <p class="section__subtitle reveal">
-          Os serviços foram desenhados para resolver o que mais importa: posicionamento, clareza e performance visual.
+          Cada formato foi pensado para unir estetica premium, velocidade real e estrutura estrategica de conversao.
         </p>
 
         <div class="services__grid">

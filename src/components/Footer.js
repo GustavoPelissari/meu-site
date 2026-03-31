@@ -6,9 +6,9 @@ export function Footer() {
       <div class="container footer__inner">
         <p class="footer__brand">Gustavo Pelissari.</p>
         <p class="footer__slogan">
-          Gustavo Pelissari - <strong>Código Limpo. Design Premium.</strong>
+          Studio de um homem so para marcas que exigem <strong>performance, clareza e presenca.</strong>
           <br />
-          <span>© ${year} Todos os direitos reservados.</span>
+          <span>&copy; ${year} Todos os direitos reservados.</span>
         </p>
       </div>
     </footer>

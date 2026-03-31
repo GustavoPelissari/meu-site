@@ -1,9 +1,10 @@
 export function Header() {
   const links = [
-    ["Início", "#hero"],
+    ["Inicio", "#hero"],
     ["Sobre", "#about"],
-    ["Serviços", "#services"],
-    ["Portfólio", "#portfolio"],
+    ["Servicos", "#services"],
+    ["Portfolio", "#portfolio"],
+    ["Diferenciais", "#differentials"],
     ["Contato", "#contact"]
   ];
 
@@ -15,7 +16,7 @@ export function Header() {
         </a>
 
         <button class="header__toggle" type="button" aria-label="Abrir menu" data-nav-toggle>
-          <span aria-hidden="true">☰</span>
+          <span aria-hidden="true">Menu</span>
         </button>
 
         <nav class="header__nav" data-nav-menu>
@@ -28,7 +29,7 @@ export function Header() {
               .join("")}
             <li>
               <a class="header__link header__link--accent" href="#contact">
-                Vamos conversar
+                Iniciar projeto
               </a>
             </li>
           </ul>
