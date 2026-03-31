@@ -1,0 +1,11 @@
+{
+  "name": "site-meu",
+  "version": "1.0.0",
+  "description": "Portfólio profissional",
+  "scripts": {
+    "start": "npx serve src/"
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}

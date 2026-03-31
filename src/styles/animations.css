@@ -1,0 +1,58 @@
+@keyframes float-soft {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 0 rgba(79, 70, 229, 0); }
+  50% { box-shadow: 0 0 40px rgba(79, 70, 229, 0.18); }
+}
+
+@keyframes marquee-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes shine-sweep {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+.u-float-soft {
+  animation: float-soft 8s ease-in-out infinite;
+}
+
+.u-glow-pulse {
+  animation: glow-pulse 5s ease-in-out infinite;
+}
+
+.u-marquee {
+  overflow: hidden;
+  position: relative;
+}
+
+.u-marquee__track {
+  display: flex;
+  width: max-content;
+  animation: marquee-left 24s linear infinite;
+}
+
+.u-shine {
+  background: linear-gradient(
+    90deg,
+    rgba(244, 244, 245, 0.18) 0%,
+    rgba(244, 244, 245, 0.75) 50%,
+    rgba(244, 244, 245, 0.18) 100%
+  );
+  background-size: 200% 100%;
+  animation: shine-sweep 3s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .u-float-soft,
+  .u-glow-pulse,
+  .u-marquee__track,
+  .u-shine {
+    animation: none !important;
+  }
+}
