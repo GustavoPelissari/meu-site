@@ -16,11 +16,7 @@
     </filter>
   </defs>
 
-  <rect width="820" height="190" rx="28" fill="#050505"/>
-
   <g transform="translate(28 27)">
-    <rect x="0" y="0" width="136" height="136" rx="26" fill="#050505" stroke="rgba(255,255,255,0.08)"/>
-
     <g transform="translate(15 14)" fill="none" stroke="url(#gold)" stroke-width="7.5" stroke-linecap="square" stroke-linejoin="miter" filter="url(#glow)">
       <path d="M53 8H81L102 28V80L81 104H27L6 80V28L27 8H53" opacity="0.95"/>
       <path d="M76 28H49L34 43V66L49 81H67L78 70" />
