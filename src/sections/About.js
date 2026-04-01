@@ -6,7 +6,7 @@ export function AboutSection() {
           <div class="about__portrait">
             <img
               class="about__image"
-              src="./assets/images/Gustavo%20Pelissari%20Oenning.jpg.jpeg"
+              src="/assets/images/gustavo-pelissari.jpg"
               alt="Retrato de Gustavo Pelissari Oenning"
               loading="lazy"
             />
