@@ -1076,7 +1076,7 @@ strong {
   }
 
   .container {
-    width: min(100% - 2rem, var(--container-max));
+    width: min(100% - 2.5rem, var(--container-max));
   }
 
   .section {
@@ -1111,7 +1111,7 @@ strong {
   }
 
   .hero__subtitle {
-    max-width: 100%;
+    max-width: 34ch;
     font-size: 0.98rem;
     line-height: 1.72;
   }
@@ -1125,6 +1125,19 @@ strong {
     font-size: clamp(1.9rem, 8.4vw, 2.8rem);
     line-height: 1.04;
     letter-spacing: -0.035em;
+    max-width: 13ch;
+  }
+
+  .section__subtitle,
+  .card__text,
+  .differentials__text,
+  .testimonials__quote,
+  .hero__metric-label,
+  .form__note,
+  .footer__slogan,
+  .about__item,
+  .about__stamp span {
+    max-width: 32ch;
   }
 
   .section__subtitle,
@@ -1179,7 +1192,7 @@ strong {
   }
 
   .contact__panel {
-    padding: 1.25rem;
+    padding: 1.25rem 1.1rem;
   }
 
   .form__actions {
@@ -1203,7 +1216,7 @@ strong {
 
 @media (max-width: 420px) {
   .container {
-    width: min(100% - 1.5rem, var(--container-max));
+    width: min(100% - 2.25rem, var(--container-max));
   }
 
   .header__brand {
@@ -1220,7 +1233,7 @@ strong {
   }
 
   .hero__title {
-    max-width: 7.4ch;
+    max-width: 7.1ch;
     font-size: clamp(2rem, 10.8vw, 2.9rem);
     line-height: 1.06;
   }
@@ -1233,11 +1246,41 @@ strong {
 
   .section__title {
     font-size: clamp(1.72rem, 8vw, 2.3rem);
+    max-width: 12ch;
   }
 
   .section__eyebrow,
   .hero__eyebrow,
   .card__meta {
     letter-spacing: 0.1em;
+  }
+
+  .header__nav {
+    left: 0.75rem;
+    right: 0.75rem;
+  }
+
+  .hero__subtitle,
+  .section__subtitle,
+  .card__text,
+  .differentials__text,
+  .testimonials__quote,
+  .hero__metric-label,
+  .form__note,
+  .footer__slogan,
+  .about__item,
+  .about__stamp span {
+    max-width: 29ch;
+  }
+
+  .contact__panel,
+  .hero__metric,
+  .about__item,
+  .differentials__item,
+  .testimonials__card,
+  .card--service,
+  .card--portfolio {
+    padding-left: 0.95rem;
+    padding-right: 0.95rem;
   }
 }
