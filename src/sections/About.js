@@ -3,7 +3,14 @@ export function AboutSection() {
     <section class="section about" id="about">
       <div class="container about__grid">
         <div class="about__media reveal" data-parallax>
-          <div class="about__portrait"></div>
+          <div class="about__portrait">
+            <img
+              class="about__image"
+              src="./assets/images/Gustavo%20Pelissari%20Oenning.jpg.jpeg"
+              alt="Retrato de Gustavo Pelissari Oenning"
+              loading="lazy"
+            />
+          </div>
           <div class="about__stamp">
             <strong>Gustavo Pelissari Oenning</strong>
             <span>Front-end, web design e sites estáticos de alta performance</span>

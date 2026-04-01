@@ -449,6 +449,7 @@ strong {
 .about__portrait {
   position: absolute;
   inset: 0;
+  overflow: hidden;
   background:
     linear-gradient(180deg, rgba(9, 9, 11, 0.12), rgba(9, 9, 11, 0.78)),
     radial-gradient(circle at 50% 20%, rgba(244, 244, 245, 0.16), transparent 24%),
@@ -456,35 +457,38 @@ strong {
     linear-gradient(140deg, #18181b, #0f0f12);
 }
 
+.about__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 24%;
+  filter: saturate(0.78) contrast(1.08) brightness(0.88) sepia(0.08);
+  transform: scale(1.035);
+}
+
 .about__portrait::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(9, 9, 11, 0.16) 0%, rgba(9, 9, 11, 0.04) 24%, rgba(9, 9, 11, 0.68) 100%),
+    radial-gradient(circle at 82% 18%, rgba(212, 175, 55, 0.18), transparent 24%),
+    radial-gradient(circle at 22% 22%, rgba(79, 70, 229, 0.18), transparent 26%);
+}
+
+.about__portrait::after {
   content: "";
   position: absolute;
   inset: 16% 14% 18%;
   border-radius: 30px;
   border: 1px solid rgba(244, 244, 245, 0.08);
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent 32%),
-    radial-gradient(circle at 50% 26%, rgba(244, 244, 245, 0.2), transparent 14%),
-    radial-gradient(circle at 50% 58%, rgba(244, 244, 245, 0.08), transparent 24%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(9, 9, 11, 0.24));
-}
-
-.about__portrait::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 54%;
-  width: min(54%, 260px);
-  aspect-ratio: 0.78;
-  transform: translate(-50%, -50%);
-  border-radius: 140px 140px 48px 48px;
-  background:
-    radial-gradient(circle at 50% 20%, rgba(244, 244, 245, 0.22), transparent 14%),
-    radial-gradient(circle at 50% 28%, rgba(255, 255, 255, 0.18) 0 16%, transparent 17%),
-    radial-gradient(circle at 50% 64%, rgba(255, 255, 255, 0.12) 0 28%, transparent 29%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(9, 9, 11, 0.16));
-  opacity: 0.85;
-  filter: grayscale(1);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), transparent 30%),
+    linear-gradient(180deg, rgba(9, 9, 11, 0) 0%, rgba(9, 9, 11, 0.18) 100%);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.02),
+    inset 0 -50px 120px rgba(9, 9, 11, 0.12);
+  pointer-events: none;
 }
 
 .about__stamp {
