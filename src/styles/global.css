@@ -185,15 +185,74 @@ strong {
 }
 
 .header__brand {
-  font-family: var(--font-heading);
-  font-size: 1rem;
-  font-weight: 800;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
 }
 
-.header__brand span {
-  color: var(--color-accent-gold);
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.logo__mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.7rem;
+  height: 2.7rem;
+  flex: 0 0 auto;
+}
+
+.logo__mark svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.logo__wordmark {
+  display: grid;
+  gap: 0.04rem;
+  line-height: 1;
+}
+
+.logo__name,
+.logo__surname {
+  display: block;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.logo__name {
+  color: var(--color-text);
+  font-size: 0.96rem;
+  letter-spacing: 0.14em;
+}
+
+.logo__surname {
+  color: rgba(244, 244, 245, 0.72);
+  font-size: 0.66rem;
+  letter-spacing: 0.28em;
+}
+
+.logo--compact {
+  gap: 0.72rem;
+}
+
+.logo--compact .logo__mark {
+  width: 2.45rem;
+  height: 2.45rem;
+}
+
+.logo--compact .logo__name {
+  font-size: 0.88rem;
+}
+
+.logo--compact .logo__surname {
+  font-size: 0.6rem;
+  letter-spacing: 0.24em;
 }
 
 .header__toggle {
@@ -932,6 +991,14 @@ strong {
   font-weight: 700;
 }
 
+.footer__brand .logo__name {
+  font-size: 1rem;
+}
+
+.footer__brand .logo__surname {
+  font-size: 0.68rem;
+}
+
 .footer__slogan {
   text-align: right;
 }
@@ -981,8 +1048,7 @@ strong {
   }
 
   .header__brand {
-    font-size: 0.92rem;
-    letter-spacing: 0.14em;
+    min-width: 0;
   }
 
   .header__menu {
@@ -1261,10 +1327,26 @@ strong {
   }
 
   .header__brand {
-    max-width: 11ch;
-    font-size: 0.76rem;
-    line-height: 1.15;
-    letter-spacing: 0.06em;
+    max-width: none;
+  }
+
+  .logo {
+    gap: 0.56rem;
+  }
+
+  .logo__mark {
+    width: 2.15rem;
+    height: 2.15rem;
+  }
+
+  .logo__name {
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+  }
+
+  .logo__surname {
+    font-size: 0.5rem;
+    letter-spacing: 0.16em;
   }
 
   .header__toggle {
