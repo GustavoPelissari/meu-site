@@ -1100,14 +1100,16 @@ strong {
   }
 
   .hero__title {
-    max-width: 8ch;
-    font-size: clamp(2.2rem, 11.8vw, 3.5rem);
+    max-width: 9ch;
+    font-size: clamp(2rem, 10.2vw, 3.15rem);
     line-height: 1.04;
     letter-spacing: -0.05em;
   }
 
   .hero__title strong {
     margin-top: 0.45rem;
+    font-size: 0.92em;
+    line-height: 1.02;
   }
 
   .hero__subtitle {
@@ -1119,6 +1121,12 @@ strong {
   .section__eyebrow,
   .hero__eyebrow {
     letter-spacing: 0.12em;
+  }
+
+  .hero__eyebrow {
+    max-width: 30ch;
+    font-size: 0.72rem;
+    line-height: 1.6;
   }
 
   .section__title {
@@ -1172,6 +1180,24 @@ strong {
     font-size: 0.84rem;
   }
 
+  .card__title,
+  .differentials__title {
+    font-size: 1.22rem;
+    line-height: 1.12;
+  }
+
+  .card__meta {
+    font-size: 0.74rem;
+    letter-spacing: 0.06em;
+  }
+
+  .testimonials__role,
+  .about__stamp span,
+  .footer__slogan {
+    font-size: 0.86rem;
+    line-height: 1.68;
+  }
+
   .about__media {
     min-height: 420px;
   }
@@ -1221,9 +1247,9 @@ strong {
 
   .header__brand {
     max-width: 11ch;
-    font-size: 0.8rem;
+    font-size: 0.76rem;
     line-height: 1.15;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.06em;
   }
 
   .header__toggle {
@@ -1233,9 +1259,13 @@ strong {
   }
 
   .hero__title {
-    max-width: 7.1ch;
-    font-size: clamp(2rem, 10.8vw, 2.9rem);
-    line-height: 1.06;
+    max-width: 8.4ch;
+    font-size: clamp(1.82rem, 9.6vw, 2.55rem);
+    line-height: 1.05;
+  }
+
+  .hero__title strong {
+    font-size: 0.88em;
   }
 
   .button {
@@ -1253,6 +1283,11 @@ strong {
   .hero__eyebrow,
   .card__meta {
     letter-spacing: 0.1em;
+  }
+
+  .hero__eyebrow {
+    max-width: 28ch;
+    font-size: 0.68rem;
   }
 
   .header__nav {
@@ -1282,5 +1317,19 @@ strong {
   .card--portfolio {
     padding-left: 0.95rem;
     padding-right: 0.95rem;
+  }
+
+  .card__title,
+  .differentials__title {
+    font-size: 1.12rem;
+  }
+
+  .card__screen-content strong {
+    font-size: clamp(1.3rem, 8vw, 1.85rem);
+    line-height: 0.98;
+  }
+
+  .footer__slogan {
+    max-width: 28ch;
   }
 }
