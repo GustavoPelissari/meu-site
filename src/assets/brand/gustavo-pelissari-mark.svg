@@ -1,25 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="markTitle">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 170" role="img" aria-labelledby="markTitle">
   <title id="markTitle">Monograma Gustavo Pelissari Oenning</title>
   <defs>
     <linearGradient id="gpGold" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f2da86"/>
-      <stop offset="45%" stop-color="#d4af37"/>
-      <stop offset="100%" stop-color="#9f7a22"/>
+      <stop offset="0%" stop-color="#f4e08c"/>
+      <stop offset="42%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#8e6a17"/>
     </linearGradient>
-    <linearGradient id="gpGoldSoft" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#f2da86" stop-opacity="0.08"/>
-      <stop offset="50%" stop-color="#d4af37" stop-opacity="0.65"/>
-      <stop offset="100%" stop-color="#9f7a22" stop-opacity="0.08"/>
+    <linearGradient id="gpGoldEdge" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f4e08c" stop-opacity="0.18"/>
+      <stop offset="50%" stop-color="#d4af37" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#8e6a17" stop-opacity="0.18"/>
     </linearGradient>
   </defs>
 
-  <g transform="translate(14 18)" fill="none" stroke="url(#gpGold)" stroke-width="10" stroke-linecap="square" stroke-linejoin="miter">
-    <path d="M108 18H52L24 46V86L52 114H108" />
-    <path d="M108 66H68" />
-    <path d="M68 18V114" />
-    <path d="M68 18H102L116 34V52L102 66H68" />
-    <path d="M41 30H100" stroke="url(#gpGoldSoft)" stroke-width="3" />
-    <path d="M41 103H88" stroke="url(#gpGoldSoft)" stroke-width="2.5" opacity="0.72" />
+  <g transform="translate(12 12)" fill="none" stroke-linecap="square" stroke-linejoin="miter">
+    <path
+      d="M68 10H108L140 42V104L108 136H46L14 104V42L46 10H68"
+      stroke="url(#gpGold)"
+      stroke-width="10"
+    />
+    <path
+      d="M54 24H104L126 46V100L104 122H52L30 100V46L52 24"
+      stroke="url(#gpGoldEdge)"
+      stroke-width="2"
+      opacity="0.48"
+    />
+    <path
+      d="M102 34H64L44 54V92L64 112H102V88H76V72H108"
+      stroke="url(#gpGold)"
+      stroke-width="12"
+    />
+    <path d="M76 34V114" stroke="url(#gpGold)" stroke-width="12"/>
+    <path d="M76 34H106L120 48V60L106 74H76" stroke="url(#gpGold)" stroke-width="12"/>
+    <path d="M40 40H114" stroke="url(#gpGoldEdge)" stroke-width="3" opacity="0.75"/>
   </g>
-  <rect x="128" y="78" width="8" height="8" fill="#d4af37"/>
+  <rect x="146" y="78" width="8" height="8" fill="#d4af37"/>
 </svg>

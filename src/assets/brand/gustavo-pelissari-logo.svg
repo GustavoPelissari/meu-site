@@ -1,39 +1,72 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 160" role="img" aria-labelledby="logoTitle logoDesc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 170" role="img" aria-labelledby="logoTitle logoDesc">
   <title id="logoTitle">Logotipo Gustavo Pelissari Oenning</title>
-  <desc id="logoDesc">Monograma geométrico GP em dourado com assinatura técnica e wordmark Gustavo Pelissari Oenning.</desc>
+  <desc id="logoDesc">Marca premium forte e marcante com escudo geométrico GP dourado e wordmark técnico.</desc>
   <defs>
     <linearGradient id="gpGold" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f2da86"/>
-      <stop offset="45%" stop-color="#d4af37"/>
-      <stop offset="100%" stop-color="#9f7a22"/>
+      <stop offset="0%" stop-color="#f4e08c"/>
+      <stop offset="42%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#8e6a17"/>
     </linearGradient>
-    <linearGradient id="gpGoldSoft" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#f2da86" stop-opacity="0.08"/>
-      <stop offset="50%" stop-color="#d4af37" stop-opacity="0.65"/>
-      <stop offset="100%" stop-color="#9f7a22" stop-opacity="0.08"/>
+    <linearGradient id="gpGoldEdge" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f4e08c" stop-opacity="0.18"/>
+      <stop offset="50%" stop-color="#d4af37" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#8e6a17" stop-opacity="0.18"/>
     </linearGradient>
+    <filter id="gpGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
 
-  <g transform="translate(12 18)" fill="none" stroke="url(#gpGold)" stroke-width="9" stroke-linecap="square" stroke-linejoin="miter">
-    <path d="M110 22H56L30 48V88L56 114H110" />
-    <path d="M110 68H72" />
-    <path d="M72 22V114" />
-    <path d="M72 22H104L118 36V54L104 68H72" />
-    <path d="M126 22V114" opacity="0.18" />
-    <path d="M45 31H102" stroke="url(#gpGoldSoft)" stroke-width="3" />
-    <path d="M45 105H92" stroke="url(#gpGoldSoft)" stroke-width="2.5" opacity="0.72" />
+  <g transform="translate(10 10)" fill="none" stroke-linecap="square" stroke-linejoin="miter" filter="url(#gpGlow)">
+    <path
+      d="M72 10H112L144 42V104L112 136H50L18 104V42L50 10H72"
+      stroke="url(#gpGold)"
+      stroke-width="10"
+    />
+    <path
+      d="M58 24H108L130 46V100L108 122H56L34 100V46L56 24"
+      stroke="url(#gpGoldEdge)"
+      stroke-width="2"
+      opacity="0.48"
+    />
+    <path
+      d="M106 34H68L48 54V92L68 112H106V88H80V72H112"
+      stroke="url(#gpGold)"
+      stroke-width="12"
+    />
+    <path
+      d="M80 34V114"
+      stroke="url(#gpGold)"
+      stroke-width="12"
+    />
+    <path
+      d="M80 34H110L124 48V60L110 74H80"
+      stroke="url(#gpGold)"
+      stroke-width="12"
+    />
+    <path
+      d="M44 40H118"
+      stroke="url(#gpGoldEdge)"
+      stroke-width="3"
+      opacity="0.75"
+    />
+    <rect x="136" y="66" width="8" height="8" fill="#d4af37" stroke="none"/>
   </g>
 
-  <g transform="translate(152 28)">
-    <path d="M0 12V102" stroke="#d4af37" stroke-opacity="0.28" stroke-width="2"/>
-    <rect x="-3" y="52" width="6" height="6" fill="#d4af37"/>
+  <g transform="translate(176 30)">
+    <path d="M0 14V108" stroke="#d4af37" stroke-opacity="0.36" stroke-width="2"/>
+    <rect x="-4" y="58" width="8" height="8" fill="#d4af37"/>
   </g>
 
-  <g transform="translate(170 38)" fill="#f4f4f5">
-    <text x="0" y="34" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="2.1">GUSTAVO PELISSARI</text>
-    <text x="0" y="78" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="500" letter-spacing="8.5" opacity="0.82">OENNING</text>
-    <path d="M0 98H160" stroke="#d4af37" stroke-opacity="0.26" stroke-width="2"/>
-    <path d="M176 98H246" stroke="#d4af37" stroke-opacity="0.14" stroke-width="2"/>
-    <rect x="160" y="95" width="8" height="8" fill="#d4af37"/>
+  <g transform="translate(204 40)" fill="#ffffff">
+    <text x="0" y="34" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="36" font-weight="800" letter-spacing="2.2">GUSTAVO PELISSARI</text>
+    <text x="0" y="82" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="500" letter-spacing="9.2" opacity="0.86">OENNING</text>
+    <path d="M0 102H168" stroke="#d4af37" stroke-opacity="0.3" stroke-width="2"/>
+    <path d="M184 102H260" stroke="#d4af37" stroke-opacity="0.14" stroke-width="2"/>
+    <rect x="168" y="98" width="8" height="8" fill="#d4af37"/>
   </g>
 </svg>
