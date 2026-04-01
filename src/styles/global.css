@@ -7,11 +7,13 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--header-height) + 24px);
+  overflow-x: clip;
 }
 
 body {
   margin: 0;
   min-width: 320px;
+  overflow-x: clip;
   background:
     radial-gradient(circle at top left, rgba(79, 70, 229, 0.14), transparent 28%),
     radial-gradient(circle at 85% 10%, rgba(212, 175, 55, 0.1), transparent 18%),
@@ -70,6 +72,28 @@ button {
   min-height: 100vh;
 }
 
+h1,
+h2,
+h3,
+p,
+li,
+a,
+span,
+strong {
+  overflow-wrap: anywhere;
+}
+
+.hero__content,
+.about__copy,
+.contact__copy,
+.contact__panel,
+.hero__metric,
+.card,
+.differentials__item,
+.testimonials__card {
+  min-width: 0;
+}
+
 .container {
   width: min(100% - 2rem, var(--container-max));
   margin-inline: auto;
@@ -105,6 +129,7 @@ button {
   font-size: clamp(2rem, 4.2vw, 4.1rem);
   line-height: 0.98;
   letter-spacing: -0.05em;
+  text-wrap: balance;
 }
 
 .section__subtitle {
@@ -112,6 +137,7 @@ button {
   max-width: 65ch;
   color: var(--color-text-muted);
   font-size: clamp(1rem, 1.6vw, 1.15rem);
+  text-wrap: pretty;
 }
 
 .header {
@@ -311,6 +337,7 @@ button {
   font-size: clamp(3.3rem, 8vw, 7rem);
   line-height: 0.98;
   letter-spacing: -0.07em;
+  text-wrap: balance;
 }
 
 .hero__title strong {
@@ -1022,7 +1049,7 @@ button {
   }
 
   .container {
-    width: min(100% - 1.25rem, var(--container-max));
+    width: min(100% - 2rem, var(--container-max));
   }
 
   .section {
@@ -1046,9 +1073,10 @@ button {
   }
 
   .hero__title {
-    max-width: 8.5ch;
-    font-size: clamp(2.5rem, 14vw, 4rem);
-    line-height: 1;
+    max-width: 8ch;
+    font-size: clamp(2.2rem, 11.8vw, 3.5rem);
+    line-height: 1.04;
+    letter-spacing: -0.05em;
   }
 
   .hero__title strong {
@@ -1058,6 +1086,27 @@ button {
   .hero__subtitle {
     max-width: 100%;
     font-size: 0.98rem;
+    line-height: 1.72;
+  }
+
+  .section__eyebrow,
+  .hero__eyebrow {
+    letter-spacing: 0.12em;
+  }
+
+  .section__title {
+    font-size: clamp(1.9rem, 8.4vw, 2.8rem);
+    line-height: 1.04;
+    letter-spacing: -0.035em;
+  }
+
+  .section__subtitle,
+  .card__text,
+  .differentials__text,
+  .testimonials__quote,
+  .hero__metric-label,
+  .form__note {
+    line-height: 1.72;
   }
 
   .hero__actions {
@@ -1126,27 +1175,42 @@ button {
 }
 
 @media (max-width: 420px) {
+  .container {
+    width: min(100% - 1.5rem, var(--container-max));
+  }
+
   .header__brand {
-    font-size: 0.84rem;
-    letter-spacing: 0.1em;
+    max-width: 11ch;
+    font-size: 0.8rem;
+    line-height: 1.15;
+    letter-spacing: 0.08em;
   }
 
   .header__toggle {
     min-width: 44px;
-    padding: 0 0.85rem;
-    font-size: 0.74rem;
+    padding: 0 0.75rem;
+    font-size: 0.72rem;
   }
 
   .hero__title {
-    font-size: clamp(2.2rem, 15vw, 3.4rem);
+    max-width: 7.4ch;
+    font-size: clamp(2rem, 10.8vw, 2.9rem);
+    line-height: 1.06;
   }
 
   .button {
     min-height: 50px;
-    padding: 0.9rem 1.1rem;
+    padding: 0.9rem 1rem;
+    white-space: normal;
   }
 
   .section__title {
-    font-size: clamp(1.8rem, 9vw, 2.5rem);
+    font-size: clamp(1.72rem, 8vw, 2.3rem);
+  }
+
+  .section__eyebrow,
+  .hero__eyebrow,
+  .card__meta {
+    letter-spacing: 0.1em;
   }
 }
