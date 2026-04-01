@@ -1,11 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 160" role="img" aria-labelledby="logoTitle logoDesc">
   <title id="logoTitle">Logotipo Gustavo Pelissari Oenning</title>
-  <desc id="logoDesc">Monograma geométrico GP em dourado com wordmark técnico Gustavo Pelissari Oenning.</desc>
+  <desc id="logoDesc">Monograma geométrico GP em dourado com assinatura técnica e wordmark Gustavo Pelissari Oenning.</desc>
   <defs>
     <linearGradient id="gpGold" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#f2da86"/>
       <stop offset="45%" stop-color="#d4af37"/>
       <stop offset="100%" stop-color="#9f7a22"/>
+    </linearGradient>
+    <linearGradient id="gpGoldSoft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f2da86" stop-opacity="0.08"/>
+      <stop offset="50%" stop-color="#d4af37" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#9f7a22" stop-opacity="0.08"/>
     </linearGradient>
   </defs>
 
@@ -15,10 +20,20 @@
     <path d="M72 22V114" />
     <path d="M72 22H104L118 36V54L104 68H72" />
     <path d="M126 22V114" opacity="0.18" />
+    <path d="M45 31H102" stroke="url(#gpGoldSoft)" stroke-width="3" />
+    <path d="M45 105H92" stroke="url(#gpGoldSoft)" stroke-width="2.5" opacity="0.72" />
+  </g>
+
+  <g transform="translate(152 28)">
+    <path d="M0 12V102" stroke="#d4af37" stroke-opacity="0.28" stroke-width="2"/>
+    <rect x="-3" y="52" width="6" height="6" fill="#d4af37"/>
   </g>
 
   <g transform="translate(170 38)" fill="#f4f4f5">
-    <text x="0" y="34" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="2.1">GUSTAVO PELISSARI</text>
-    <text x="0" y="78" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="500" letter-spacing="8.5" opacity="0.82">OENNING</text>
+    <text x="0" y="34" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="2.1">GUSTAVO PELISSARI</text>
+    <text x="0" y="78" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="500" letter-spacing="8.5" opacity="0.82">OENNING</text>
+    <path d="M0 98H160" stroke="#d4af37" stroke-opacity="0.26" stroke-width="2"/>
+    <path d="M176 98H246" stroke="#d4af37" stroke-opacity="0.14" stroke-width="2"/>
+    <rect x="160" y="95" width="8" height="8" fill="#d4af37"/>
   </g>
 </svg>
