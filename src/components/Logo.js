@@ -2,24 +2,14 @@ export function Logo({ compact = false, className = "" } = {}) {
   const classes = ["logo", compact ? "logo--compact" : "", className].filter(Boolean).join(" ");
 
   return `
-    <span class="${classes}" aria-label="Gustavo Pelissari Oenning">
-      <span class="logo__mark" aria-hidden="true">
-        <svg viewBox="0 0 64 64" role="img" focusable="false">
-          <defs>
-            <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#f4e1a1" />
-              <stop offset="100%" stop-color="#d4af37" />
-            </linearGradient>
-          </defs>
-          <rect x="6" y="6" width="52" height="52" rx="16" fill="rgba(255,255,255,0.03)" stroke="rgba(244,244,245,0.12)" />
-          <path d="M22 24.5C24.8 20.5 28.8 18.5 34 18.5C40.7 18.5 45.2 22.4 46.5 28.7H39.8C38.8 25.9 36.7 24.2 33.8 24.2C29.5 24.2 26.8 27.5 26.8 32.1C26.8 36.9 29.7 40 34.1 40C37.7 40 40.1 38.2 40.9 34.8H33.5V29.9H47V32C47 40.2 41.4 45.7 33.8 45.7C24.8 45.7 19.9 39.2 19.9 32.1C19.9 29.3 20.7 26.7 22 24.5Z" fill="url(#logoGradient)" />
-          <circle cx="49" cy="15" r="3" fill="url(#logoGradient)" />
-        </svg>
-      </span>
-      <span class="logo__wordmark">
-        <span class="logo__name">Gustavo Pelissari</span>
-        <span class="logo__surname">Oenning</span>
-      </span>
+    <span class="${classes}">
+      <img
+        class="logo__image"
+        src="/assets/brand/gpo-logo.svg"
+        alt="Logotipo Gustavo Pelissari Oenning"
+        loading="eager"
+        decoding="async"
+      />
     </span>
   `;
 }
