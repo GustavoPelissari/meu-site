@@ -13,7 +13,7 @@ export function Header() {
   return `
     <header class="header">
       <div class="container header__inner">
-        <a class="header__brand" href="#hero" aria-label="Gustavo Pelissari">
+        <a class="header__brand" href="#hero" aria-label="Gustavo Pelissari Oenning">
           ${Logo({ compact: true })}
         </a>
 

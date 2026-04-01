@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="markTitle">
+  <title id="markTitle">Monograma Gustavo Pelissari Oenning</title>
+  <defs>
+    <linearGradient id="gpGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f2da86"/>
+      <stop offset="45%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#9f7a22"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(14 18)" fill="none" stroke="url(#gpGold)" stroke-width="10" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M108 18H52L24 46V86L52 114H108" />
+    <path d="M108 66H68" />
+    <path d="M68 18V114" />
+    <path d="M68 18H102L116 34V52L102 66H68" />
+  </g>
+</svg>

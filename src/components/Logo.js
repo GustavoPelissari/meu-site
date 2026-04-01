@@ -5,7 +5,7 @@ export function Logo({ compact = false, className = "" } = {}) {
     <span class="${classes}">
       <img
         class="logo__image"
-        src="/assets/brand/gpo-logo.svg"
+        src="/assets/brand/gustavo-pelissari-logo.svg"
         alt="Logotipo Gustavo Pelissari Oenning"
         loading="eager"
         decoding="async"
