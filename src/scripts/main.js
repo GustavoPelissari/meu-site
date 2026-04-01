@@ -15,7 +15,7 @@ function renderApp() {
   const app = document.querySelector("#app");
 
   if (!app) {
-    throw new Error("Elemento #app nao encontrado.");
+    throw new Error("Elemento #app não encontrado.");
   }
 
   try {
@@ -68,11 +68,11 @@ function renderApp() {
         }
 
         const lines = [
-          "Ola, Gustavo. Vim pelo seu site e quero iniciar um projeto.",
+          "Olá, Gustavo. Vim pelo seu site e quero iniciar um projeto.",
           `Nome: ${name}`,
-          email ? `Email: ${email}` : "",
+          email ? `E-mail: ${email}` : "",
           project ? `Tipo de projeto: ${project}` : "",
-          budget ? `Orcamento estimado: ${budget}` : "",
+          budget ? `Orçamento estimado: ${budget}` : "",
           message ? `Objetivo: ${message}` : ""
         ].filter(Boolean);
 

@@ -4,13 +4,13 @@ export function HeroSection() {
   return `
     <section class="section hero" id="hero">
       <div class="container hero__content hero__content--full">
-        <div class="hero__eyebrow reveal">Studio premium para sites estaticos de alta performance</div>
+        <div class="hero__eyebrow reveal">Estúdio premium para sites estáticos de alta performance</div>
         <h1 class="hero__title reveal">
-          Presenca digital de alto nivel.
+          Presença digital de alto nível.
           <strong>Performance que gera resultados.</strong>
         </h1>
         <p class="hero__subtitle reveal">
-          Design exclusivo, velocidade extrema e foco total em conversao para empresas e comunidades que exigem excelencia.
+          Design exclusivo, velocidade extrema e foco total em conversão para empresas e comunidades que exigem excelência.
         </p>
 
         <div class="hero__actions reveal">
@@ -20,7 +20,7 @@ export function HeroSection() {
             variant: "primary"
           })}
           ${Button({
-            label: "Ver portfolio",
+            label: "Ver portfólio",
             href: "#portfolio",
             variant: "ghost"
           })}
@@ -29,11 +29,11 @@ export function HeroSection() {
         <div class="hero__metrics reveal" aria-label="Indicadores de valor">
           <div class="hero__metric">
             <span class="hero__metric-value">&lt; 1s</span>
-            <span class="hero__metric-label">primeira impressao rapida e sem atrito</span>
+            <span class="hero__metric-label">primeira impressão rápida e sem atrito</span>
           </div>
           <div class="hero__metric">
             <span class="hero__metric-value">100%</span>
-            <span class="hero__metric-label">design sob medida, sem template generico</span>
+            <span class="hero__metric-label">design sob medida, sem template genérico</span>
           </div>
           <div class="hero__metric">
             <span class="hero__metric-value">SEO</span>

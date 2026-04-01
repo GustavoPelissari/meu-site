@@ -1,9 +1,9 @@
 export function Header() {
   const links = [
-    ["Inicio", "#hero"],
+    ["Início", "#hero"],
     ["Sobre", "#about"],
-    ["Servicos", "#services"],
-    ["Portfolio", "#portfolio"],
+    ["Serviços", "#services"],
+    ["Portfólio", "#portfolio"],
     ["Diferenciais", "#differentials"],
     ["Contato", "#contact"]
   ];

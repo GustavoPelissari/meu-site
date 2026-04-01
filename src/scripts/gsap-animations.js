@@ -3,7 +3,7 @@ export function initAnimations() {
   const ScrollTrigger = window.ScrollTrigger;
 
   if (!gsap) {
-    console.warn("GSAP nao foi carregado.");
+    console.warn("GSAP não foi carregado.");
     return;
   }
 

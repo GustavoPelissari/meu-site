@@ -1,7 +1,7 @@
 {
   "name": "site-meu",
   "version": "1.0.0",
-  "description": "Portifolio profissional premium",
+  "description": "Portfólio profissional premium",
   "scripts": {
     "start": "npx serve src/"
   },

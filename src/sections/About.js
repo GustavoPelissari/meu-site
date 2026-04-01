@@ -6,39 +6,39 @@ export function AboutSection() {
           <div class="about__portrait"></div>
           <div class="about__stamp">
             <strong>Gustavo Pelissari Oenning</strong>
-            <span>Front-end, web design e sites estaticos de alta performance</span>
+            <span>Front-end, web design e sites estáticos de alta performance</span>
           </div>
         </div>
 
         <div class="about__copy reveal">
           <div class="section__eyebrow">Sobre</div>
           <h2 class="section__title">
-            Mais do que codigo, entrego presenca premium com estrategia.
+            Mais do que código, entrego presença premium com estratégia.
           </h2>
           <p class="section__subtitle">
-            Sou Gustavo Pelissari Oenning. Ajudo negocios a se destacarem no digital com projetos estaticos de altissima performance. Mais do que codigo, entrego solucoes visuais que conectam sua marca ao publico ideal.
+            Sou Gustavo Pelissari Oenning. Ajudo negócios a se destacarem no digital com projetos estáticos de altíssima performance. Mais do que código, entrego soluções visuais que conectam sua marca ao público ideal.
           </p>
 
           <ul class="about__list">
             <li class="about__item">
               <span class="about__bullet"></span>
               <div>
-                <strong>Design com intencao</strong>
-                Cada bloco existe para construir percepcao de valor, confianca e desejo de acao.
+                <strong>Design com intenção</strong>
+                Cada bloco existe para construir percepção de valor, confiança e desejo de ação.
               </div>
             </li>
             <li class="about__item">
               <span class="about__bullet"></span>
               <div>
                 <strong>Velocidade extrema</strong>
-                Codigo enxuto, estrutura limpa e foco nas metricas que realmente mudam a experiencia.
+                Código enxuto, estrutura limpa e foco nas métricas que realmente mudam a experiência.
               </div>
             </li>
             <li class="about__item">
               <span class="about__bullet"></span>
               <div>
-                <strong>Conversao antes da vaidade</strong>
-                A estetica impressiona, mas a estrategia vem sempre guiando a decisao do usuario.
+                <strong>Conversão antes da vaidade</strong>
+                A estética impressiona, mas a estratégia sempre guia a decisão do usuário.
               </div>
             </li>
           </ul>
@@ -52,12 +52,12 @@ export function PortfolioSection() {
   const projects = [
     {
       name: "Geo Guincho",
-      tag: "Landing page de altissima conversao e resposta rapida para servicos de resgate 24h.",
-      accent: "Conversao"
+      tag: "Landing page de altíssima conversão e resposta rápida para serviços de resgate 24h.",
+      accent: "Conversão"
     },
     {
       name: "Movimento Cursilho",
-      tag: "Portal comunitario focado em clareza de informacoes e design acolhedor.",
+      tag: "Portal comunitário focado em clareza de informações e design acolhedor.",
       accent: "Comunidade"
     },
     {
@@ -70,8 +70,8 @@ export function PortfolioSection() {
   return `
     <section class="section portfolio" id="portfolio">
       <div class="container">
-        <div class="section__eyebrow">Portfolio</div>
-        <h2 class="section__title reveal">Apresentacao impecavel para projetos que precisam vender confianca.</h2>
+        <div class="section__eyebrow">Portfólio</div>
+        <h2 class="section__title reveal">Apresentação impecável para projetos que precisam transmitir confiança.</h2>
         <p class="section__subtitle reveal">
           Cards grandes, mockups conceituais e uma leitura visual pensada para dar peso de marca desde o primeiro olhar.
         </p>
@@ -107,10 +107,10 @@ export function PortfolioSection() {
 
 export function DifferentialsSection() {
   const items = [
-    ["01", "Velocidade Extrema", "Sites estaticos que carregam rapido, seguram a atencao e reforcam confianca logo no primeiro acesso."],
-    ["02", "Design Unico", "Nada de template pronto. Sua marca recebe uma identidade visual pensada para o seu contexto."],
-    ["03", "SEO Estruturado", "Semantica, hierarquia e base tecnica organizadas para facilitar descoberta e indexacao."],
-    ["04", "Zero Dor de Cabeca", "Hospedagem simples, seguranca alta e manutencao descomplicada para voce focar no negocio."]
+    ["01", "Velocidade Extrema", "Sites estáticos que carregam rápido, prendem a atenção e reforçam confiança logo no primeiro acesso."],
+    ["02", "Design Único", "Nada de template pronto. Sua marca recebe uma identidade visual pensada para o seu contexto."],
+    ["03", "SEO Estruturado", "Semântica, hierarquia e base técnica organizadas para facilitar a descoberta e a indexação."],
+    ["04", "Zero Dor de Cabeça", "Hospedagem simples, segurança alta e manutenção descomplicada para você focar no negócio."]
   ];
 
   return `
@@ -119,7 +119,7 @@ export function DifferentialsSection() {
         <div class="section__eyebrow">Diferenciais</div>
         <h2 class="section__title reveal">O premium aparece nos detalhes, mas se prova no resultado.</h2>
         <p class="section__subtitle reveal">
-          Menos peso, mais presenca. Menos ruido, mais clareza. Menos site comum, mais ativo digital para a sua marca.
+          Menos peso, mais presença. Menos ruído, mais clareza. Menos site comum, mais ativo digital para a sua marca.
         </p>
 
         <div class="differentials__grid">
@@ -142,10 +142,10 @@ export function DifferentialsSection() {
 
 export function TestimonialsSection() {
   const testimonials = [
-    ["O site ficou incrivelmente rapido e o design superou nossas expectativas. O profissionalismo do Gustavo fez toda a diferenca.", "Cliente modelo", "Founder / marca premium"],
-    ["A pagina trouxe autoridade logo no primeiro acesso. Tudo parece mais claro, mais sofisticado e mais confiavel.", "Cliente modelo", "Diretora comercial"],
-    ["Foi uma entrega objetiva, bonita e muito estrategica. Nada sobrou e nada faltou.", "Cliente modelo", "Gestor de marketing"],
-    ["Conseguimos centralizar nossa comunicacao com um visual acolhedor e muito mais organizado.", "Cliente modelo", "Coordenador de comunidade"]
+    ["O site ficou incrivelmente rápido, e o design superou nossas expectativas. O profissionalismo do Gustavo fez toda a diferença.", "Cliente modelo", "Founder / marca premium"],
+    ["A página trouxe autoridade logo no primeiro acesso. Tudo parece mais claro, mais sofisticado e mais confiável.", "Cliente modelo", "Diretora comercial"],
+    ["Foi uma entrega objetiva, bonita e muito estratégica. Nada sobrou e nada faltou.", "Cliente modelo", "Gestor de marketing"],
+    ["Conseguimos centralizar nossa comunicação com um visual acolhedor e muito mais organizado.", "Cliente modelo", "Coordenador de comunidade"]
   ];
 
   const repeated = [...testimonials, ...testimonials];
@@ -154,9 +154,9 @@ export function TestimonialsSection() {
     <section class="section testimonials">
       <div class="container">
         <div class="section__eyebrow">Depoimentos</div>
-        <h2 class="section__title reveal">Estrutura de prova social pronta para crescer junto com o portfolio.</h2>
+        <h2 class="section__title reveal">Estrutura de prova social pronta para crescer junto com o portfólio.</h2>
         <p class="section__subtitle reveal">
-          Um carrossel continuo e suave para reforcar confianca sem perder a limpeza visual da pagina.
+          Um carrossel contínuo e suave para reforçar confiança sem perder a limpeza visual da página.
         </p>
       </div>
 

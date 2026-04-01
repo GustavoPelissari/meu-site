@@ -30,18 +30,18 @@ export function ServicesSection() {
     {
       title: "Sites Institucionais",
       text: "A vitrine definitiva para sua empresa, com design sob medida, leitura fluida e autoridade desde o primeiro segundo.",
-      meta: "Identidade + confianca",
+      meta: "Identidade + confiança",
       icon: icons.institucional
     },
     {
       title: "Landing Pages",
-      text: "Paginas com um unico objetivo: transformar visita em lead, conversa ou venda com narrativa visual afiada.",
-      meta: "Conversao + clareza",
+      text: "Páginas com um único objetivo: transformar visita em lead, conversa ou venda com narrativa visual afiada.",
+      meta: "Conversão + clareza",
       icon: icons.landing
     },
     {
       title: "Sites para Comunidades",
-      text: "Plataformas organizadas, acolhedoras e informativas para movimentos, paroquias e grupos que precisam centralizar comunicacao.",
+      text: "Plataformas organizadas, acolhedoras e informativas para movimentos, paróquias e grupos que precisam centralizar a comunicação.",
       meta: "Engajamento + comunidade",
       icon: icons.comunidade
     }
@@ -50,10 +50,10 @@ export function ServicesSection() {
   return `
     <section class="section services" id="services">
       <div class="container">
-        <div class="section__eyebrow">Servicos</div>
-        <h2 class="section__title reveal">O que eu entrego para transformar presenca digital em ativo de marca.</h2>
+        <div class="section__eyebrow">Serviços</div>
+        <h2 class="section__title reveal">O que eu entrego para transformar presença digital em ativo de marca.</h2>
         <p class="section__subtitle reveal">
-          Cada formato foi pensado para unir estetica premium, velocidade real e estrutura estrategica de conversao.
+          Cada formato foi pensado para unir estética premium, velocidade real e estrutura estratégica de conversão.
         </p>
 
         <div class="services__grid">
