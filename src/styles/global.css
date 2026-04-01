@@ -80,7 +80,9 @@ li,
 a,
 span,
 strong {
-  overflow-wrap: anywhere;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
 }
 
 .hero__content,
@@ -97,6 +99,31 @@ strong {
 .container {
   width: min(100% - 2rem, var(--container-max));
   margin-inline: auto;
+}
+
+.section__title,
+.section__subtitle,
+.hero__title,
+.hero__subtitle,
+.hero__metric-label,
+.card__title,
+.card__text,
+.differentials__title,
+.differentials__text,
+.testimonials__quote,
+.testimonials__role,
+.form__label,
+.form__note,
+.footer__slogan,
+.about__item,
+.about__stamp span,
+.about__stamp strong,
+.header__link,
+.header__brand,
+.button {
+  overflow-wrap: normal;
+  word-break: keep-all;
+  hyphens: none;
 }
 
 .section {
