@@ -1,17 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
   <defs>
     <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#d5b06a"/>
-      <stop offset="45%" stop-color="#c5a059"/>
-      <stop offset="100%" stop-color="#a8833c"/>
+      <stop offset="0%" stop-color="#fff08a"/>
+      <stop offset="40%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#d6aa00"/>
     </linearGradient>
   </defs>
   <rect width="180" height="180" rx="36" fill="#050505"/>
-  <g transform="translate(17 17)" fill="none" stroke="url(#gold)" stroke-width="10" stroke-linecap="square" stroke-linejoin="miter">
-    <path d="M103 33H79C54 33 37 50 37 75C37 100 54 117 79 117C98 117 113 108 122 93" />
-    <path d="M79 75H111" />
-    <path d="M79 33V117" />
-    <path d="M79 33H109C120 33 129 42 129 53C129 64 120 73 109 73H79" />
-    <path d="M79 21C49 21 25 45 25 75C25 105 49 129 79 129C109 129 133 105 133 75C133 45 109 21 79 21Z" />
+  <g transform="translate(22 21)" fill="none" stroke="url(#gold)" stroke-width="9" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M67 10H95L121 35V102L95 128H39L13 102V35L39 10H67" opacity="0.95"/>
+    <path d="M87 35H57L40 52V79L57 96H76L89 83" />
+    <path d="M69 67H92" />
+    <path d="M61 35V118" />
+    <path d="M61 35H88L100 47V61L88 73H61" />
+    <path d="M33 94H88L104 110V118H33L18 102V35" opacity="0.92"/>
   </g>
 </svg>
