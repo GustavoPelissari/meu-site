@@ -187,23 +187,15 @@ strong {
 .header__brand {
   display: inline-flex;
   align-items: center;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
 }
 
-.logo {
-  display: inline-flex;
-  align-items: center;
-  min-width: 0;
-}
-
-.logo__image {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-}
-
-.logo--compact {
-  width: clamp(190px, 18vw, 270px);
+.header__brand span {
+  color: var(--color-accent-gold);
 }
 
 .header__toggle {
@@ -939,11 +931,12 @@ strong {
 
 .footer__brand {
   color: var(--color-text);
+  font-family: var(--font-heading);
   font-weight: 700;
 }
 
-.footer__brand .logo {
-  width: min(100%, 320px);
+.footer__brand span {
+  color: var(--color-accent-gold);
 }
 
 .footer__slogan {
@@ -996,6 +989,8 @@ strong {
 
   .header__brand {
     min-width: 0;
+    font-size: 0.92rem;
+    letter-spacing: 0.14em;
   }
 
   .header__menu {
@@ -1274,11 +1269,10 @@ strong {
   }
 
   .header__brand {
-    max-width: none;
-  }
-
-  .logo--compact {
-    width: min(56vw, 220px);
+    max-width: 11ch;
+    font-size: 0.76rem;
+    line-height: 1.15;
+    letter-spacing: 0.06em;
   }
 
   .header__toggle {

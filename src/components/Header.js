@@ -1,5 +1,3 @@
-import { Logo } from "./Logo.js";
-
 export function Header() {
   const links = [
     ["Início", "#hero"],
@@ -13,8 +11,8 @@ export function Header() {
   return `
     <header class="header">
       <div class="container header__inner">
-        <a class="header__brand" href="#hero" aria-label="Gustavo Pelissari Oenning">
-          ${Logo({ compact: true })}
+        <a class="header__brand" href="#hero" aria-label="Gustavo Pelissari">
+          GUSTAVO PELISSARI<span>.</span>
         </a>
 
         <button class="header__toggle" type="button" aria-label="Abrir menu" data-nav-toggle>
