@@ -33,19 +33,19 @@ const projects = [
     ],
   },
   {
-    kicker: "Empresas locais",
-    title: "Mais presenca para negocios que dependem de reputacao e indicacao.",
+    kicker: "Negocios locais e de bairro",
+    title: "Mais confianca para lojas, padarias, restaurantes e servicos que vivem da reputacao local.",
     description:
-      "Se o cliente encontra sua empresa pelo Instagram, Google ou indicacao, o site precisa confirmar que o seu negocio e serio. Esse tipo de estrutura funciona muito bem para negocios locais que querem profissionalizar a imagem.",
-    stack: "Lojas, empresas de servico local, negocios familiares e marcas em fase de crescimento.",
+      "Se o cliente encontra sua empresa pelo Instagram, Google, indicacao ou mapa, o site precisa mostrar rapidamente o que voce vende, onde atende e como entrar em contato. A proposta aqui e ser claro, confiavel e facil de consultar no celular.",
+    stack: "Lojas, padarias, restaurantes, mercados de bairro, servicos locais e negocios familiares.",
     deliverable:
-      "Pagina institucional com servicos, regiao atendida, provas de confianca e botoes fortes para contato.",
+      "Pagina institucional com servicos ou produtos em destaque, horario ou area atendida, localizacao, provas de confianca e botoes fortes para contato.",
     impact:
-      "Faz sua empresa parecer mais estruturada e preparada para receber novos clientes.",
+      "Mais seguranca para quem esta comparando opcoes e quer decidir rapido pelo celular.",
     points: [
-      "Ajuda a sair da imagem de negocio improvisado ou desatualizado.",
-      "Valoriza o que voce vende sem deixar o cliente perdido.",
-      "Funciona bem para captar quem quer resposta rapida pelo celular.",
+      "Ajuda seu negocio a parecer organizado mesmo quando a venda comeca pelo WhatsApp.",
+      "Mostra o essencial sem exagero: o que voce faz, onde atende e como contratar.",
+      "Funciona bem para quem precisa transmitir proximidade, clareza e profissionalismo.",
     ],
   },
   {
@@ -93,6 +93,9 @@ const cursor = document.querySelector(".cursor");
 const cursorLabel = cursor?.querySelector("span");
 const reduceMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
 const coarsePointerQuery = window.matchMedia("(pointer: coarse)");
+const scrollState = {
+  ticking: false,
+};
 
 const cursorState = {
   currentX: window.innerWidth / 2,
@@ -114,6 +117,10 @@ function clamp(value, min, max) {
 
 function prefersReducedMotion() {
   return reduceMotionQuery.matches;
+}
+
+function shouldToneDownEffects() {
+  return prefersReducedMotion() || coarsePointerQuery.matches || window.innerWidth < 820;
 }
 
 function updateProgress(scrollY) {
@@ -169,7 +176,7 @@ function updateReveals() {
 }
 
 function updateParallax() {
-  if (prefersReducedMotion()) {
+  if (shouldToneDownEffects()) {
     parallaxItems.forEach((item) => {
       item.style.setProperty("--parallax-shift", "0px");
       item.style.setProperty("--parallax-scale", "1");
@@ -188,7 +195,7 @@ function updateParallax() {
   });
 }
 
-function renderScroll() {
+function syncScrollEffects() {
   const scrollY = window.scrollY;
   updateProgress(scrollY);
   updateHeroFill(scrollY);
@@ -197,11 +204,17 @@ function renderScroll() {
   updateActiveNav(scrollY);
   updateReveals();
   updateParallax();
-  window.requestAnimationFrame(renderScroll);
+  scrollState.ticking = false;
+}
+
+function requestScrollUpdate() {
+  if (scrollState.ticking) return;
+  scrollState.ticking = true;
+  window.requestAnimationFrame(syncScrollEffects);
 }
 
 function moveCursor() {
-  if (!cursor || coarsePointerQuery.matches) return;
+  if (!cursor || shouldToneDownEffects()) return;
   cursorState.currentX += (cursorState.targetX - cursorState.currentX) * 0.18;
   cursorState.currentY += (cursorState.targetY - cursorState.currentY) * 0.18;
   cursor.style.transform = `translate3d(${cursorState.currentX}px, ${cursorState.currentY}px, 0)`;
@@ -214,7 +227,7 @@ function setCursorLabel(text) {
 }
 
 function initCursor() {
-  if (!cursor || coarsePointerQuery.matches) return;
+  if (!cursor || shouldToneDownEffects()) return;
 
   window.addEventListener("pointermove", (event) => {
     cursorState.targetX = event.clientX;
@@ -242,7 +255,7 @@ function initCursor() {
 }
 
 function initMagnetic() {
-  if (coarsePointerQuery.matches || prefersReducedMotion()) return;
+  if (shouldToneDownEffects()) return;
 
   magneticItems.forEach((item) => {
     item.addEventListener("pointermove", (event) => {
@@ -399,9 +412,10 @@ function initAnchors() {
 }
 
 function onResize() {
-  updateParallax();
+  requestScrollUpdate();
 }
 
+window.addEventListener("scroll", requestScrollUpdate, { passive: true });
 window.addEventListener("resize", onResize);
 reduceMotionQuery.addEventListener("change", onResize);
 coarsePointerQuery.addEventListener("change", onResize);
@@ -411,6 +425,4 @@ initMagnetic();
 initSlider();
 initProjectPanel();
 initAnchors();
-updateReveals();
-updateParallax();
-renderScroll();
+requestScrollUpdate();
