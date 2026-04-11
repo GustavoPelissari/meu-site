@@ -379,9 +379,10 @@ function initSlider() {
   sliderTrack.addEventListener(
     "wheel",
     (event) => {
-      if (Math.abs(event.deltaY) <= Math.abs(event.deltaX)) return;
+      if (!event.shiftKey) return;
       event.preventDefault();
-      sliderTrack.scrollLeft += event.deltaY;
+      sliderTrack.scrollLeft += event.deltaY + event.deltaX;
+      updateSliderStatus();
     },
     { passive: false }
   );
