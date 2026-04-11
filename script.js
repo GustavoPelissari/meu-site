@@ -1,68 +1,68 @@
 const projects = [
   {
-    kicker: "Clinicas e consultorios",
-    title: "Um site pensado para transmitir cuidado, seguranca e organizacao.",
+    kicker: "Clínicas e consultórios",
+    title: "Um site pensado para transmitir cuidado, segurança e organização.",
     description:
-      "Ideal para negocios de saude, estetica e atendimento agendado que precisam parecer confiaveis logo no primeiro acesso. A proposta e passar clareza, cuidado e facilitar o contato para quem ja esta buscando ajuda.",
+      "Ideal para negócios de saúde, estética e atendimento agendado que precisam parecer confiáveis logo no primeiro acesso. A proposta é passar clareza, cuidado e facilitar o contato para quem já está buscando ajuda.",
     stack:
-      "Clinicas, consultorios, centros de estetica, terapias e atendimento com horario marcado.",
+      "Clínicas, consultórios, centros de estética, terapias e atendimento com horário marcado.",
     deliverable:
-      "Apresentacao de servicos, equipe, localizacao, perguntas frequentes e botoes claros para contato ou agendamento.",
+      "Apresentação de serviços, equipe, localização, perguntas frequentes e botões claros para contato ou agendamento.",
     impact:
-      "Mais seguranca para quem esta conhecendo o seu negocio e decidindo se entra em contato.",
+      "Mais segurança para quem está conhecendo o seu negócio e decidindo se entra em contato.",
     points: [
-      "Visual limpo e premium para valorizar a experiencia do paciente ou cliente.",
-      "Informacoes organizadas para reduzir duvidas e acelerar a decisao.",
-      "Contato rapido por WhatsApp, formulario ou botao de agendamento.",
+      "Visual limpo e premium para valorizar a experiência do paciente ou cliente.",
+      "Informações organizadas para reduzir dúvidas e acelerar a decisão.",
+      "Contato rápido por WhatsApp, formulário ou botão de agendamento.",
     ],
   },
   {
-    kicker: "Escritorios e servicos",
-    title: "Uma apresentacao mais forte para negocios que vivem de confianca.",
+    kicker: "Escritórios e serviços",
+    title: "Uma apresentação mais forte para negócios que vivem de confiança.",
     description:
-      "Para advogados, consultores, contadores e empresas de servico, o site precisa fazer o cliente sentir seguranca antes da primeira reuniao. O foco aqui e organizacao, autoridade e boa primeira impressao.",
-    stack: "Escritorios, consultorias, servicos B2B, assessorias e atendimento profissional.",
+      "Para advogados, consultores, contadores e empresas de serviço, o site precisa fazer o cliente sentir segurança antes da primeira reunião. O foco aqui é organização, autoridade e boa primeira impressão.",
+    stack: "Escritórios, consultorias, serviços B2B, assessorias e atendimento profissional.",
     deliverable:
-      "Home com proposta clara, paginas de servicos, diferenciais, depoimentos e canal direto para orcamento.",
+      "Home com proposta clara, páginas de serviços, diferenciais, depoimentos e canal direto para orçamento.",
     impact:
       "Mais autoridade percebida e uma imagem bem mais profissional para quem chega pela primeira vez.",
     points: [
       "Explica melhor o que a empresa faz e para quem ela atende.",
-      "Ajuda o cliente a perceber valor antes de comparar somente por preco.",
+      "Ajuda o cliente a perceber valor antes de comparar somente por preço.",
       "Deixa o caminho para o contato mais simples e mais direto.",
     ],
   },
   {
-    kicker: "Negocios locais e de bairro",
-    title: "Mais confianca para lojas, padarias, restaurantes e servicos que vivem da reputacao local.",
+    kicker: "Negócios locais e de bairro",
+    title: "Mais confiança para lojas, padarias, restaurantes e serviços que vivem da reputação local.",
     description:
-      "Se o cliente encontra sua empresa pelo Instagram, Google, indicacao ou mapa, o site precisa mostrar rapidamente o que voce vende, onde atende e como entrar em contato. A proposta aqui e ser claro, confiavel e facil de consultar no celular.",
-    stack: "Lojas, padarias, restaurantes, mercados de bairro, servicos locais e negocios familiares.",
+      "Se o cliente encontra sua empresa pelo Instagram, Google, indicação ou mapa, o site precisa mostrar rapidamente o que você vende, onde atende e como entrar em contato. A proposta aqui é ser claro, confiável e fácil de consultar no celular.",
+    stack: "Lojas, padarias, restaurantes, mercados de bairro, serviços locais e negócios familiares.",
     deliverable:
-      "Pagina institucional com servicos ou produtos em destaque, horario ou area atendida, localizacao, provas de confianca e botoes fortes para contato.",
+      "Página institucional com serviços ou produtos em destaque, horário ou área atendida, localização, provas de confiança e botões fortes para contato.",
     impact:
-      "Mais seguranca para quem esta comparando opcoes e quer decidir rapido pelo celular.",
+      "Mais segurança para quem está comparando opções e quer decidir rápido pelo celular.",
     points: [
-      "Ajuda seu negocio a parecer organizado mesmo quando a venda comeca pelo WhatsApp.",
-      "Mostra o essencial sem exagero: o que voce faz, onde atende e como contratar.",
+      "Ajuda seu negócio a parecer organizado mesmo quando a venda começa pelo WhatsApp.",
+      "Mostra o essencial sem exagero: o que você faz, onde atende e como contratar.",
       "Funciona bem para quem precisa transmitir proximidade, clareza e profissionalismo.",
     ],
   },
   {
     kicker: "Profissionais premium",
-    title: "Uma marca pessoal mais forte para quem vende conhecimento e confianca.",
+    title: "Uma marca pessoal mais forte para quem vende conhecimento e confiança.",
     description:
-      "Arquitetos, mentores, consultores e especialistas precisam de uma apresentacao que transmita nivel. Aqui a ideia e unir elegancia visual, clareza e uma presenca que valoriza o trabalho autoral.",
+      "Arquitetos, mentores, consultores e especialistas precisam de uma apresentação que transmita nível. Aqui a ideia é unir elegância visual, clareza e uma presença que valoriza o trabalho autoral.",
     stack:
       "Arquitetos, mentores, consultores, especialistas e profissionais com posicionamento premium.",
     deliverable:
-      "Portfolio ou site pessoal com apresentacao, servicos, diferenciais e CTA para reuniao ou proposta.",
+      "Portfólio ou site pessoal com apresentação, serviços, diferenciais e CTA para reunião ou proposta.",
     impact:
       "Faz o seu trabalho parecer mais valioso antes mesmo da conversa com o cliente.",
     points: [
-      "Ajuda a construir autoridade sem exagerar nas informacoes.",
-      "Cria uma experiencia visual mais refinada e memoravel.",
-      "Facilita o contato de quem gostou do seu trabalho e quer avancar.",
+      "Ajuda a construir autoridade sem exagerar nas informações.",
+      "Cria uma experiência visual mais refinada e memorável.",
+      "Facilita o contato de quem gostou do seu trabalho e quer avançar.",
     ],
   },
 ];
@@ -82,10 +82,10 @@ const contentSections = navLinks
 const revealItems = [...document.querySelectorAll("[data-reveal]")];
 const parallaxItems = [...document.querySelectorAll("[data-parallax]")];
 const magneticItems = [...document.querySelectorAll(".magnetic")];
-const hero = document.querySelector(".hero");
 const footerHeadline = document.querySelector(".footer__headline");
 const sliderTrack = document.querySelector("[data-slider-track]");
 const sliderButtons = [...document.querySelectorAll("[data-slider]")];
+const sliderStatus = document.querySelector("[data-slider-status]");
 const projectCards = [...document.querySelectorAll("[data-project]")];
 const panel = document.querySelector(".project-panel");
 const panelCloseTargets = [...document.querySelectorAll("[data-close-panel]")];
@@ -128,12 +128,6 @@ function updateProgress(scrollY) {
   root.style.setProperty("--scroll-progress", (scrollY / maxScroll).toFixed(4));
 }
 
-function updateHeroFill(scrollY) {
-  if (!hero) return;
-  const fillProgress = clamp(scrollY / Math.max(hero.offsetHeight * 0.88, 1), 0.14, 1);
-  root.style.setProperty("--hero-fill", fillProgress.toFixed(3));
-}
-
 function updateFooterDistortion() {
   if (!footerHeadline) return;
   const rect = footerHeadline.getBoundingClientRect();
@@ -169,7 +163,7 @@ function updateReveals() {
     if (item.classList.contains("is-visible")) return;
     const rect = item.getBoundingClientRect();
     if (rect.top < window.innerHeight * 0.9) {
-      item.style.transitionDelay = `${Math.min(index * 0.03, 0.18)}s`;
+      item.style.transitionDelay = `${Math.min(index * 0.015, 0.08)}s`;
       item.classList.add("is-visible");
     }
   });
@@ -198,7 +192,6 @@ function updateParallax() {
 function syncScrollEffects() {
   const scrollY = window.scrollY;
   updateProgress(scrollY);
-  updateHeroFill(scrollY);
   updateFooterDistortion();
   updateTopbar(scrollY);
   updateActiveNav(scrollY);
@@ -306,6 +299,42 @@ function openProject(index) {
   window.requestAnimationFrame(() => panel.classList.add("is-open"));
 }
 
+function updateSliderStatus() {
+  if (!sliderTrack || !sliderStatus || !projectCards.length) return;
+
+  const center = sliderTrack.scrollLeft + sliderTrack.clientWidth / 2;
+  let activeIndex = 0;
+  let smallestDistance = Number.POSITIVE_INFINITY;
+
+  projectCards.forEach((card, index) => {
+    const cardCenter = card.offsetLeft + card.offsetWidth / 2;
+    const distance = Math.abs(center - cardCenter);
+    if (distance < smallestDistance) {
+      smallestDistance = distance;
+      activeIndex = index;
+    }
+  });
+
+  [...sliderStatus.children].forEach((dot, index) => {
+    dot.classList.toggle("is-active", index === activeIndex);
+  });
+}
+
+function initSliderStatus() {
+  if (!sliderStatus || !projectCards.length) return;
+
+  sliderStatus.innerHTML = "";
+  projectCards.forEach((_, index) => {
+    const dot = document.createElement("span");
+    dot.className = "portfolio-toolbar__dot";
+    dot.setAttribute("aria-hidden", "true");
+    if (index === 0) {
+      dot.classList.add("is-active");
+    }
+    sliderStatus.appendChild(dot);
+  });
+}
+
 function closeProject() {
   if (!panel) return;
   panel.classList.remove("is-open");
@@ -343,6 +372,8 @@ function initProjectPanel() {
 
 function initSlider() {
   if (!sliderTrack) return;
+
+  initSliderStatus();
 
   sliderButtons.forEach((button) => {
     button.addEventListener("click", () => {
@@ -390,6 +421,8 @@ function initSlider() {
   sliderTrack.addEventListener("pointerup", releaseDrag);
   sliderTrack.addEventListener("pointerleave", releaseDrag);
   sliderTrack.addEventListener("pointercancel", releaseDrag);
+  sliderTrack.addEventListener("scroll", updateSliderStatus, { passive: true });
+  updateSliderStatus();
 }
 
 function initAnchors() {
@@ -413,6 +446,7 @@ function initAnchors() {
 
 function onResize() {
   requestScrollUpdate();
+  updateSliderStatus();
 }
 
 window.addEventListener("scroll", requestScrollUpdate, { passive: true });
