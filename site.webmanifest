@@ -1,0 +1,17 @@
+{
+  "name": "Gustavo Oenning - Sites Premium",
+  "short_name": "Gustavo Oenning",
+  "lang": "pt-BR",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#08090b",
+  "theme_color": "#08090b",
+  "icons": [
+    {
+      "src": "assets/logo-gustavo-oenning.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
