@@ -1391,10 +1391,7 @@ main,
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  letter-spacing: calc(-0.06em + var(--footer-distort) * -0.02em);
-  transform: skewX(calc(var(--footer-distort) * 3deg)) scaleY(calc(1 - var(--footer-distort) * 0.04));
-  transform-origin: left center;
-  transition: transform 0.35s var(--ease-premium);
+  letter-spacing: -0.06em;
 }
 
 .footer__cta {

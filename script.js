@@ -82,7 +82,6 @@ const contentSections = navLinks
 const revealItems = [...document.querySelectorAll("[data-reveal]")];
 const parallaxItems = [...document.querySelectorAll("[data-parallax]")];
 const magneticItems = [...document.querySelectorAll(".magnetic")];
-const footerHeadline = document.querySelector(".footer__headline");
 const sliderTrack = document.querySelector("[data-slider-track]");
 const sliderButtons = [...document.querySelectorAll("[data-slider]")];
 const sliderStatus = document.querySelector("[data-slider-status]");
@@ -126,13 +125,6 @@ function shouldToneDownEffects() {
 function updateProgress(scrollY) {
   const maxScroll = Math.max(document.body.scrollHeight - window.innerHeight, 1);
   root.style.setProperty("--scroll-progress", (scrollY / maxScroll).toFixed(4));
-}
-
-function updateFooterDistortion() {
-  if (!footerHeadline) return;
-  const rect = footerHeadline.getBoundingClientRect();
-  const progress = clamp(1 - rect.top / window.innerHeight, 0, 1);
-  root.style.setProperty("--footer-distort", (progress * 0.7).toFixed(3));
 }
 
 function updateTopbar(scrollY) {
@@ -192,7 +184,6 @@ function updateParallax() {
 function syncScrollEffects() {
   const scrollY = window.scrollY;
   updateProgress(scrollY);
-  updateFooterDistortion();
   updateTopbar(scrollY);
   updateActiveNav(scrollY);
   updateReveals();
