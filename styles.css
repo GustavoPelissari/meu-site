@@ -925,6 +925,21 @@ main,
   text-wrap: balance;
 }
 
+.bento-card h3::after,
+.portfolio-card h3::after,
+.process-card h3::after,
+.detail-card h3::after,
+.project-panel h3::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  margin-top: 0.85rem;
+  border-radius: 999px;
+  background: var(--accent);
+  box-shadow: 0 0 18px rgba(86, 236, 255, 0.4);
+}
+
 .bento-card p,
 .portfolio-card p,
 .process-card p,
@@ -1338,21 +1353,11 @@ main,
 .detail-card__eyebrow {
   display: inline-flex;
   align-items: center;
-  gap: 0.45rem;
   color: var(--accent-strong);
   font-size: 0.76rem;
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-}
-
-.detail-card__eyebrow::before {
-  content: "";
-  width: 7px;
-  height: 7px;
-  border-radius: 999px;
-  background: var(--accent);
-  box-shadow: 0 0 18px rgba(86, 236, 255, 0.4);
 }
 
 .detail-card h3 {
